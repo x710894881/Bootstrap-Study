@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>表单控件大小</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--  
+1、input-sm：让控件比正常大小更小
+2、input-lg：让控件比正常大小更大
+这两个类适用于表单中的input/textarea/select控件
+
+上面仅对高度做了处理，若我们选哟啊空间宽度做处理，需要借助bs框架的网格系统。
+
+前面介绍水平表单时说过，如果表单使用类名‘form-horizontal’，其中‘form-group’就相当于网格系统中的row
+
+
+-->
+
+
+<h1>案例一</h1>
+<form role="form">
+    <div class="form-group">
+        <label class="control-label">控件变大</label>
+        <input type="text" class="form-control input-lg" placeholder="添加.input-lg控件变大" name="">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">正常大小</label>
+        <input type="text" class="form-control" placeholder="正常大小" name="">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">控件变小</label>
+        <input type="text" class="form-control input-sm" placeholder="添加.input-sm控件变小" name="">
+    </div>
+</form>
+
+<h1>案例2</h1>
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <div class="col-xs-4">
+            <input type="text" class="form-control input-lg" placeholder=".col-xs-4" name="">
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control input-lg" placeholder=".col-xs-4" name="">
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control input-lg" placeholder=".col-xs-4" name="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-6">
+            <input type="text" class="form-control" placeholder=".col-xs-6" name="">
+        </div>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" placeholder=".col-xs-6" name="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-5">
+            <input type="text" class="form-control input-sm" placeholder=".col-xs-5 .input-sm" name="">
+        </div>
+        <div class="col-xs-7">
+            <input type="text" class="form-control input-sm" placeholder=".col-xs-7 .input-sm" name="">
+        </div>
+    </div>
+</form>
+
+<h1>案例三</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-4">
+            <input class="form-control input-lg" type="text" placeholder=".col-xs-4">
+        </div>
+
+        <div class="col-xs-4">
+            <input class="form-control input-lg" type="text" placeholder=".col-xs-4">
+        </div>
+
+        <div class="col-xs-4">
+            <input class="form-control input-lg" type="text" placeholder=".col-xs-4">
+        </div>
+    </div>   
+</div>
+
+
+
+</body>
+</html>

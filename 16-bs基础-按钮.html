@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>按钮</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- 
+.btn：基础按钮
+.btn-default：默认按钮 
+.btn-primary：主要那牛
+.btn-success：成功按钮
+.btn-info：信息按钮
+.btn-warning：警告按钮
+.btn-danger：危险按钮
+.btn-link：链接按钮
+.btn-lg：大型按钮
+.btn-sm：小型按钮
+.btn-xs：超小型按钮
+.btn-block :块状按钮
+
+活动状态
+
+禁用状态：
+1、在标签中添加disabled属性
+2、在元素标签中添加类名“disabled”
+区别：“.disabled”样式不会禁止按钮的默认行为，比如说提交和重置行为等。如果想要这样的禁用那牛也能禁止按钮的默认行为，则需要通过js语言来处理。对于a标签页存在类似的问题，如果通过类名“.disabled”来禁用按钮，其链接行为是无法禁止。而在元素标签中添加‘disabled’属性的方法是可以禁止元素的默认行为的。
+
+
+自己测试的结果：
+a链接加上样式“.disabled”会禁止掉默认行为，加上disabled属性不会禁止
+button加上样式“.disbaled”不会禁止默认行为，加上disabled属性会禁止
+
+ -->
+
+
+
+<a href="http://www.baidu.com" class="btn btn-primary disabled">跳转链接</a>
+
+<form role="form">
+    <div class="form-group">
+       <input type="text" class="form-control" name=""> 
+       <button type="reset" class="btn btn-primary" disabled="disabled">重置</button>
+    </div>
+    
+
+</form>
+
+
+
+
+
+</body>
+</html>
