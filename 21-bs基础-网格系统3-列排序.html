@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网格系统-列排序</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        [class *= col-]{
+          background-color: #eee;
+          border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 
+列排序其实就是改变列的方向，就是改变左右浮动，并且设置浮动的距离。
+在BS框架的网格系统中是通过添加类名".col-md-push-*"和".col-md-pull-*"(其中星号代表移动的列组合数)
+col-md-push-*：向右移动
+col-md-pull-*：向左移动
+ -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-8">.col-md-8</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-push-8">.col-md-4</div>
+        <div class="col-md-8 col-md-pull-4">.col-md-8</div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>

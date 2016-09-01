@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网格系统</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--  
+分成12份
+网格系统的工作原理：
+1、数据行（.row）必须包含在容器（.container）中，以便为其赋予合适的对齐方式和内距(padding)
+2、在行（.row）中可以添加列（.column），但列数之和不能超过平分的总列数，比如12
+3、具体内容应当放置在列容器（column）之内，而且只有列（column）才可以作为航容器(.row)的直接子元素
+4、通过设置内边距(padding)从而创建列与列之间的间距。然后通过为第一列和最后一列设置负值的外边距(margin)来抵消内距(padding)的影响。
+
+
+1、列组合：
+列组合简单理解就是更改数字来合并列。实现列组合方式非常简单，只涉及两个css两个特性：浮动与宽度百分比。
+
+
+-->
+
+
+<table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            超小屏幕
+            <small>手机 (&lt;768px)</small>
+          </th>
+          <th>
+            小屏幕
+            <small>平板 (≥768px)</small>
+          </th>
+          <th>
+            中等屏幕
+            <small>桌面显示器 (≥992px)</small>
+          </th>
+          <th>
+            大屏幕
+            <small>大桌面显示器 (≥1200px)</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-nowrap" scope="row">栅格系统行为</th>
+          <td>总是水平排列</td>
+          <td colspan="3">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"><code>.container</code> 最大宽度</th>
+          <td>None （自动）</td>
+          <td>750px</td>
+          <td>970px</td>
+          <td>1170px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">类前缀</th>
+          <td><code>.col-xs-</code></td>
+          <td><code>.col-sm-</code></td>
+          <td><code>.col-md-</code></td>
+          <td><code>.col-lg-</code></td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">列（column）数</th>
+          <td colspan="4">12</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">最大列（column）宽</th>
+          <td class="text-muted">自动</td>
+          <td>~62px</td>
+          <td>~81px</td>
+          <td>~97px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">槽（gutter）宽</th>
+          <td colspan="4">30px （每列左右均有 15px）</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">可嵌套</th>
+          <td colspan="4">是</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">偏移（Offsets）</th>
+          <td colspan="4">是</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">列排序</th>
+          <td colspan="4">是</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+ 
+</body>
+</html>
