@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>下拉菜单-菜单标题</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{
+            padding:50px 200px; 
+        }
+        .dropdown{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 
+
+在BS框架中下拉菜单默认是左对齐，如果想让下拉菜单相对于父容器右对齐时，可以在“dropdown-menu”上添加一个“pull-right”或者“dropdown-menu-right”类名。
+
+注意：
+一定要为dropdown添加float:left的css样式。
+
+ -->
+
+
+<div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        食物 <i class="caret"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right">   <!-- pull-right -->
+        <li class="dropdown-header">水果</li>
+        <li><a href="">苹果</a></li>
+        <li><a href="">香蕉</a></li>
+        <li><a href="">梨子</a></li>
+        <li><a href="">桃子</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">蔬菜</li>
+        <li><a href="">芹菜</a></li>
+        <li><a href="">萝卜</a></li>
+        <li><a href="">茄子</a></li>
+    </ul>
+</div>
+
+
+
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

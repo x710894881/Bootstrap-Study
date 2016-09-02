@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>下拉菜单-下拉分隔线</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- 
+
+组与组之间可以通过添加一个空的li，并且给这个li添加类名“divider”来实现添加下拉分隔线的功能。
+
+ -->
+
+<div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        食物 <i class="caret"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="">苹果</a></li>
+        <li><a href="">香蕉</a></li>
+        <li><a href="">梨</a></li>
+        <li><a href="">桃</a></li>
+        <li class="divider"></li>   <!-- 分隔线 -->
+        <li><a href="">芹菜</a></li>
+        <li><a href="">萝卜</a></li>
+        <li><a href="">茄子</a></li>
+        <li class="divider"></li>   <!-- 分割线 -->
+        <li><a href="">米饭</a></li>
+        <li><a href="">馒头</a></li>
+        <li><a href="">面条</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
