@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>按钮（按钮工具栏）</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+<!-- 
+
+只需要将按钮组“btn-group”按组放在一个大的容器“btn-toolbar”中。
+
+实现原理主要是让容器的多个分组“btn-group”元素进行浮动，并且组与组之前保持5px的左外距。
+
+注意：在“btn-toolbar”上清除浮动。！！！
+
+
+按钮组大小设置：
+只需要在“btn-group”类名上追加对应的类名，就可以得到不同大小的按钮组。
+.btn-group-lg：大按钮组
+.btn-group-sm：小按钮组
+.btn-group-xs：超小按钮组
+
+
+ -->
+
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-left"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-center"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-right"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-justify"></i></a>
+    </div>
+    <div class="btn-group">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-indent-left"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-indent-right"></i></a>
+    </div>
+    <div class="btn-group">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-font"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-bold"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-italic"></i></a>
+    </div>
+    <div class="btn-group">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-text-height"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-text-width"></i></a>
+    </div>
+</div>
+
+<hr>
+
+<div class="btn-toolbar">
+    <div class="btn-group btn-group-lg">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-left"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-center"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-right"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-align-justify"></i></a>
+    </div>
+    <div class="btn-group">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-indent-left"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-indent-right"></i></a>
+    </div>
+    <div class="btn-group btn-group-sm">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-font"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-bold"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-italic"></i></a>
+    </div>
+    <div class="btn-group btn-group-xs">
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-text-height"></i></a>
+        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-text-width"></i></a>
+    </div>
+</div>
+
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
